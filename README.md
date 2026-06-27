@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+💰 Expense Tracker Application
+A full-stack Expense Tracker web application that allows users to manage, track, and visualize their daily expenses with an interactive dashboard.
 
-## Getting Started
+🚀 Live Project
+LIve Link: https://expenses-xi-five.vercel.app
 
-First, run the development server:
+📂 GitHub Repository
+🔗 Repository Link: 
+Server: https://github.com/mdantormia1779-dev/expensesserver.git
+Client: https://github.com/mdantormia1779-dev/expenses.git
 
-```bash
+🛠️ Tech Stack
+Frontend:
+React.js
+Next.js
+TypeScript
+Tailwind CSS
+Recharts
+Backend:
+Node.js
+Express.js
+MongoDB
+
+✨ Features
+✅ Add, update, and delete expenses
+📊 Visualize expenses using charts (Pie Chart)
+🔄 Real-time UI updates using custom events
+📱 Responsive design
+⚡ Fast and optimized performance
+🔐 Clean and structured API
+
+⚙️ Setup Instructions
+🔹 1. Clone the Repository
+git clone https://github.com/your-username/expense-tracker.git
+cd expense-tracker
+
+
+🔹 2. Setup Backend
+cd server
+npm install
+
+Create .env file:
+PORT=5000
+DB_URL=your_mongodb_connection_string
+
+Run Backend:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🔹 3. Setup Frontend
+cd client
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create .env.local file:
+NEXT_PUBLIC_API_URL=http://localhost:5000
 
-## Learn More
+Run Frontend:
+npm run dev
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📊 API Endpoints
+Method
+Endpoint
+Description
+GET
+/expenses
+Get all expenses
+POST
+/expenses
+Add new expense
+PUT
+/expenses/:id
+Update expense
+DELETE
+/expenses/:id
+Delete expense
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
